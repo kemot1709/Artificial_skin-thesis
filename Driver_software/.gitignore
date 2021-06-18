@@ -1,0 +1,22 @@
+# Dla CLion
+**/~$*
+**/.idea
+**html
+
+# Dla CubeMX
+.cproject
+.mxproject
+.project
+*.ld
+*.xml
+
+
+# Dla CLion for STM32
+CMakeLists*
+CMakeCache*
+CMakeFiles*
+*.cmake
+Makefile
+*.cbp
+*.map
+*.bin
