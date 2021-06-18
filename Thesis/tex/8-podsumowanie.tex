@@ -1,0 +1,19 @@
+\newpage
+\section{Podsumowanie}
+\label{s_podsumowanie}
+
+Wykonana praca miała na celu zaprojektowanie, zbudowanie i uruchomienie prototypu sztucznej skóry na robocie Tiago. Podczas prac silnie były brane pod uwagę założenia stawiane w każdym z aspektów pracy. Wykonane zostały także badania nad doborem optymalnej grubości gumy do zbudowania sztucznej skóry. Przeprowadzone eksperymenty skupiały się zarówno na aspektach czysto mechanicznych materiałów, jak i ich wpływu na~otrzymywane odczyty.
+
+Zwieńczeniem prac było wykonanie fizycznego prototypu sztucznej skóry, który prawidłowo współdziałał z robotem.
+Prototyp sztucznej skóry został wykonany w dwóch wersjach, przy czym druga wersja eliminowała największy błąd popełniony przy konstrukcji pierwszego - brak okrągłego kształtu szkieletu sztucznej skóry. W kolejnej wersji zostało wprowadzone także kilka usprawnień i poprawienie płynności pracy układu. Na~obu prototypach przeprowadzone zostały testy zachowania się robota na otrzymywanie różnych bodźców ze środowiska.
+
+Sztuczna skóra została wykonana wykorzystując najlepsze w testach gumy, taśmę miedzianą oraz folię Velostat. Kolejność składania warstw pozostała taka sama jak w wersji otrzymanej prototypu: guma, taśma miedziana, folia Velostat, taśma miedziana, guma.
+Wykonanie prototypu wymagało także wykonania szkieletu, aby sztuczna skóra mogła być stabilnie zamocowana na robocie. Konstrukcja w przypadku obu wersji prototypu wykonana została z materiałów powszechnie dostępnych na rynku.
+
+W ramach pracy stworzona została także warstwa elektroniczna czujnika, opierającą się na podobnie działających układach co wersja otrzymana. Wszystkie układy zostały dobrane ponownie, specjalnie pod tworzoną sztuczną skórę. Została także wykonana płytka PCB integrująca w jednym miejscu całość sterowania. Zostały z niej wyprowadzone złącza do podłączenia sztucznej skóry oraz komunikacji poprzez USB (wraz z zasilaniem przez USB). Zostało pozostawione miejsce na przyszłą rozbudowę o kolejne czujniki lub moduł Bluetooth.
+
+Praca wymagała również napisania oprogramowania na dwie platformy: mikrokontroler sterownika oraz komputer sterujący (Ubuntu 18.4). Oprogramowanie na mikrokontroler w~pełni obsługuje sztuczną skórę, przetwarza zebrane pomiary i~przesyła je do~komputera. Zostało ono także napisane z uwzględnieniem podstawowych zabezpieczeń. Oprogramowanie na komputer sterujący jest skryptem w języku Python. Odbiera ono dane wysyłane przez sterownik i~przekazuje je dalej do robota Tiago działającego w~systemie ROS.
+
+% Perspektywy i możliwości zastosowania
+
+Zaprojektowane rozwiązanie może być w przyszłości z powodzeniem stosowane w~robotach przemysłowych do ochraniania ich przed kolizjami ze środowiskiem. Robotami, dla których to rozwiązanie nadawałoby się najbardziej są roboty asystujące, nie~tylko te na rynek konsumencki, ale przede wszystkim na rynek przemysłowy (np. roboty transportowe w halach magazynowych). Główną zaletą zaprojektowanej sztucznej skóry są: niska cena, lekkość konstrukcji i nieskomplikowana, a~zarazem niezawodna budowa. Taka konfiguracja sztucznej skóry jest dużo tańsza od systemów wizyjnych oraz dokładnych czujników pojemnościowych, jednak posiada ona wielokrotnie gorszą rozdzielczość. W~rozwiązaniach przemysłowych rozdzielczość pomiarów często nie ma aż tak dużego znaczenia jak niezawodność i cena.

@@ -1,0 +1,159 @@
+% !TEX encoding = utf8
+% !TeX spellcheck = pl_PL
+% !BIB program = biber
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Bachelor's & Master's Thesis Template             %%
+%% Copyleft by Artur M. Brodzki & Piotr Woźniak      %%
+%% Faculty of Electronics and Information Technology %%
+%% Warsaw University of Technology, 2019-2020        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[
+    left=2.5cm,         % Sadly, generic margin parameter
+    right=2.5cm,        % doesnt't work, as it is
+    top=2.5cm,          % superseded by more specific
+    bottom=3cm,         % left...bottom parameters.
+    bindingoffset=6mm,  % Optional binding offset.
+    nohyphenation=false % You may turn off hyphenation, if don't like.
+]{eiti/eiti-thesis}
+
+\langpol % Dla języka angielskiego mamy \langeng
+\graphicspath{{img/}}             % Katalog z obrazkami.
+\addbibresource{bibliografia.bib} % Plik .bib z bibliografią
+
+
+\usepackage{subcaption}
+\usepackage{placeins}
+% \usepackage{multirow}
+% \usepackage{adjustbox}
+\usepackage{rotating}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{siunitx}
+
+\begin{document}
+
+%--------------------------------------
+% Strona tytułowa
+%--------------------------------------
+%\MasterThesis % Dla pracy inżynierskiej mamy \EngineerThesis
+\EngineerThesis
+\instytut{Automatyki i Informatyki Stosowanej}
+\kierunek{Automatyka i Robotyka}
+\specjalnosc{Automatyka i Robotyka}
+\title{
+    Sztuczna skóra zastosowana w robotach usługowych
+}
+\engtitle{ % Tytuł po angielsku do angielskiego streszczenia
+    Artificial skin used with assistant robots.
+}
+\author{Tomasz Indeka}
+\album{293457}
+\promotor{dr inż. Tomasz Winiarski}
+\date{\the\year}
+\maketitle
+
+%--------------------------------------
+% Streszczenie po polsku
+%--------------------------------------
+\cleardoublepage % Zaczynamy od nieparzystej strony
+\input{tex/0-streszczenie}
+
+%--------------------------------------
+% Oświadczenie o autorstwie
+%--------------------------------------
+\cleardoublepage  % Zaczynamy od nieparzystej strony
+\pagestyle{plain}
+\makeauthorship
+
+%--------------------------------------
+% Spis treści
+%--------------------------------------
+\cleardoublepage % Zaczynamy od nieparzystej strony
+\tableofcontents
+
+%--------------------------------------
+% Rozdziały
+%--------------------------------------
+\cleardoublepage % Zaczynamy od nieparzystej strony
+\pagestyle{headings}
+
+\input{tex/1-wprowadzenie}         % Wygodnie jest trzymać każdy rozdział w osobnym pliku.
+% \input{tex/2-de-finibus}    % Umożliwia to również łatwą migrację do nowej wersji szablonu:
+% \input{tex/3-code-listings} % wystarczy podmienić swoje pliki main.tex i eiti-thesis.cls
+                            % na nowe wersje, a cały tekst pracy pozostaje nienaruszony.
+\input{tex/2-przeglad}
+\input{tex/3-narzedzia}
+\input{tex/4-budowa}
+\input{tex/5-badanie}
+\input{tex/6-integracja}
+\input{tex/7-testy}
+\input{tex/8-podsumowanie}
+
+% \newpage % Rozdziały zaczynamy od nowej strony
+% \section{Summatio}          % Można też pisać rozdziały w jednym pliku.
+% \lipsum[5-10]
+
+%--------------------------------------------
+% Literatura
+%--------------------------------------------
+\cleardoublepage % Zaczynamy od nieparzystej strony
+\printbibliography
+
+%--------------------------------------------
+% Spisy (opcjonalne)
+%--------------------------------------------
+\newpage
+\pagestyle{plain}
+
+% Wykaz symboli i skrótów.
+% Pamiętaj, żeby posortować symbole alfabetycznie
+% we własnym zakresie. Ponieważ mało kto używa takiego wykazu,
+% uznałem, że robienie automatycznie sortowanej listy
+% na poziomie LaTeXa to za duży overkill.
+% Makro \acronymlist generuje właściwy tytuł sekcji,
+% w zależności od języka.
+% Makro \acronym dodaje skrót/symbol do listy,
+% zapewniając podstawowe formatowanie.
+% //AB
+% \vspace{0.8cm}
+% \acronymlist
+% \acronym{ADC}{przetwornik analogowo-cyfrowy}
+% \acronym{COM}{communication port}
+% \acronym{EiTI}{Wydział Elektroniki i Technik Informacyjnych}
+% \acronym{HAL}{Hardware abstraction layer}
+% \acronym{IOT}{Internet of things}
+% \acronym{IWDG}{Independent watchdog}
+% \acronym{MEMS}{Micro Electro Mechanical Systems}
+% % \acronym{PW}{Politechnika Warszawska}
+% \acronym{ROS}{Robot Operating System}
+% \acronym{ST}{STMicroelectronics}
+% \acronym{SWD}{Serial Wire Debug}
+% \acronym{UART}{Universal Asynchronous Receiver/Transmitter}
+% \acronym{USB}{Universal Serial Bus}
+
+% \newpage
+\listoffigurestoc     % Spis rysunków.
+\vspace{1cm}          % vertical space
+
+\newpage
+\listoftablestoc      % Spis tabel.
+\vspace{1cm}          % vertical space
+
+% \newpage
+% \listofappendicestoc  % Spis załączników
+
+% Załączniki
+% \newpage
+% \appendix{Nazwa załącznika 1}
+% \lipsum[1-8]
+
+% \newpage
+% \appendix{Nazwa załącznika 2}
+% \lipsum[1-4]
+
+% Używając powyższych spisów jako szablonu,
+% możesz tu dodać swój własny wykaz bądź listę,
+% np. spis algorytmów.
+
+\end{document} % Dobranoc.
