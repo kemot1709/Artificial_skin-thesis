@@ -8,6 +8,7 @@ Video showing effects of my work https://vimeo.com/567381301.
 Niniejsza praca miała na celu kontynuację prac prowadzonych nad sztuczną skórą na wydziale EiTI w ramach projektu INCARE pt. „Zintegrowany system innowacyjnych rozwiązań dla opieki nad osobami starszymi", finansowanego przez Narodowe Centrum Badan i Rozwoju na podstawie umowy nr AL2/2/INCARE/2018. Celem było stworzenie nowego prototypu sztucznej skóry i jego integracja na robocie asystującym Tiago działającym pod kontrolą systemu ROS. Zbudowany prototyp został zamocowany wokół robota, aby chronić go przed wywieraniem na niego nacisku powodowanego przez otoczenie lub człowieka, i odjeżdżać od jego źródła.
 
 Praca opisuje zastosowane podejście technologii wykonania sztucznej skóry w porównaniu do podejścia innych zespołów badawczych ze świata. Opisany został szczegółowo proces projektowania prototypu sztucznej skóry oraz podjęte decyzje od budowy mechanicznej, przez projekt części elektronicznej i wykonywanych przez nią zadań, aż po część programistyczną integrującą sztuczną skórę z systemem sterowania robotem. Znajduje się tu także rozdział poświęcony badaniom nad doborem odpowiedniego materiału nośnego i ochronnego dla projektowanego rozwiązania. Gotowe rozwiązanie zostało również pomyślnie przetestowane w symulacji, w programie Gazebo oraz w laboratorium na rzeczywistym robocie.
+
 **slowakluczowe:** sztuczna skóra, robot asystujący, Tiago, ROS
 
 ### EN
