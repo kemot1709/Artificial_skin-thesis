@@ -9,7 +9,7 @@ Niniejsza praca miała na celu kontynuację prac prowadzonych nad sztuczną skó
 
 Praca opisuje zastosowane podejście technologii wykonania sztucznej skóry w porównaniu do podejścia innych zespołów badawczych ze świata. Opisany został szczegółowo proces projektowania prototypu sztucznej skóry oraz podjęte decyzje od budowy mechanicznej, przez projekt części elektronicznej i wykonywanych przez nią zadań, aż po część programistyczną integrującą sztuczną skórę z systemem sterowania robotem. Znajduje się tu także rozdział poświęcony badaniom nad doborem odpowiedniego materiału nośnego i ochronnego dla projektowanego rozwiązania. Gotowe rozwiązanie zostało również pomyślnie przetestowane w symulacji, w programie Gazebo oraz w laboratorium na rzeczywistym robocie.
 
-**slowakluczowe:** sztuczna skóra, robot asystujący, Tiago, ROS
+**słowa kluczowe:** sztuczna skóra, robot asystujący, Tiago, ROS
 
 ### EN
 This thesis was intended to continue the work on artificial skin developed at the EiTI department within the INCARE AAL-2017-059 project ,,Integrated Solution for Innovative Elderly Care'' by the AAL JP and co-funded by the AAL JP countries (National Centre for Research and Development, Poland under Grant AAL2/2/INCARE/2018). The aim was to create a new artificial skin prototype and integrate it with the Tiago service robot, working on the ROS system. The built prototype was attached around the robot in order to protect robot from the impact caused by the environment or the human and to drive away from its source.
